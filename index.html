@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div.w3{
+            cursor: alias;
+            width: 15%;
+        }
+       div.page{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 3fr;
+            grid-template-rows: 100fr 2000fr 10fr;
+            grid-template-areas: 'header header'
+                                 'menu mainContent'
+                                 'footer footer';
+                        font-family: sans-serif;
+        }
+            div.header{
+            background-color: rgb(51, 125, 221);
+            grid-area: header;
+            text-align: center;
+            border-style: dashed 3px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            text-align: center;
+        }
+        div.menu{    
+            width: 50px;
+            border: 5px solid rgb(51, 125, 221);
+            padding: 60px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        
+            grid-area: menu;
+            text-align: center;
+             color: blue;
+        }
+        div.mainContent{
+            background-color: lightgrey;
+            grid-area: mainContent;
+            margin: 10px;
+            text-align: center;
+         
+        }
+        div.footer{
+            grid-area: footer;
+            background-color: lightgrey;
+            text-align: center
+            s;
+            
+        }
+        div.txtmain{
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="panel">
+    </div>
+    <div class="page">
+        <div class="panel">
+        </div>
+        <div class="header"><h1>My website</h1></div> 
+        <div class="menu"><p>Navigation </p>
+            <p><button id="w3"><a href="https://www.w3schools.com">W3Schools</p></a></button>
+            <p><button id="gh"><a href="https://github.com/">GitHub</a></button>
+        </div>
+        <div class="mainContent">
+            <h2>Headline</h2>
+           <div class="txtmain"><p>ipsum dolor, sit amet consectetur adipisicing elit. Non delectus veritatis repudiandae magnam, saepe culpa eaque ut quas sed! Atque earum mollitia aperiam iure sint architecto asperiores quas enim quidem.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae saepe libero quaerat ut est dolore, temporibus iusto quisquam vitae cumque dolores sit molestias quia quam? Reiciendis id esse totam. Eaque.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod corporis totam porro architecto labore odit deserunt mollitia laboriosam enim officiis iure facilis sapiente vero, unde quas. Tenetur cum nisi praesentium?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nobis obcaecati facilis fugiat quam ducimus! Sapiente veritatis deleniti necessitatibus natus provident, quod dolore velit culpa molestias laborum nihil, cupiditate vitae!</p>
+        </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
